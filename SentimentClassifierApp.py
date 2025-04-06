@@ -27,13 +27,13 @@ body { background-color: #f5f5f5; font-family: 'Segoe UI', sans-serif; }
 </style>
 """, unsafe_allow_html=True)
 
-MODEL_PATH = './models/best_sentiment_classifier.pkl'
-VECTORIZER_PATH = './models/vectorizer.pkl'
+MODEL_PATH = 'best_sentiment_classifier.pkl'
+VECTORIZER_PATH = 'vectorizer.pkl'
 
 @st.cache_resource
 def load_resources(model_path: str, vectorizer_path: str):
     if not os.path.exists(model_path) or not os.path.exists(vectorizer_path):
-        st.error("Model files missing. Please check the './models' directory.")
+        st.error("Model files missing.")
         return None, None
 
     with open(model_path, 'rb') as m_file:
