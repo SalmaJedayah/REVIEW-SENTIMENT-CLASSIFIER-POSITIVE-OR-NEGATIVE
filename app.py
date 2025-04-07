@@ -1,9 +1,9 @@
 
 """
-Amazon Books Review Sentiment Classifier with Sidebar Mode Selection
+Amazon Books Review Sentiment Classifier 
 --------------------------------------------------------------------
 This app uses a pre-trained sentiment classifier and TF-IDF vectorizer 
-(from './models') to classify Amazon Books reviews as Positive or Negative.
+ to classify Amazon Books reviews as Positive or Negative.
 Users can choose between manual review entry or batch CSV upload via the sidebar.
 """
 
