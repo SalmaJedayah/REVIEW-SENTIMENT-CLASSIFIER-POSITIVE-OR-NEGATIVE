@@ -26,8 +26,8 @@ body { background-color: #f5f5f5; font-family: 'Segoe UI', sans-serif; }
 """, unsafe_allow_html=True)
 
 # Model and Vectorizer paths
-MODEL_PATH = './models/best_sentiment_classifier.pkl'
-VECTORIZER_PATH = './models/vectorizer.pkl'
+MODEL_PATH = 'best_sentiment_classifier.pkl'
+VECTORIZER_PATH = 'vectorizer.pkl'
 
 @st.cache_resource
 def load_resources(model_path: str, vectorizer_path: str):
